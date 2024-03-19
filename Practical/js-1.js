@@ -1,0 +1,1 @@
+console.log('Head tag ka SRC script tag.');

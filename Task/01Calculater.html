@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="01Calculater.css">
+</head>
+<body>
+    <h1>Calculater</h1>
+
+    <hr>
+
+    <div class="main-1">
+
+        <div class="main-2">
+
+            <div class="cant-1">
+                <input type="text" name="first" class="n1" placeholder="First Num" id="num1">
+            </div>
+
+            <div class="cant-2">
+                <input type="text" name="second" class="n2" placeholder="Second Num" id="num2">
+            </div>
+
+            <div class="cant-cal">
+                <input type="text" name="cla" class="cal" id="cal" placeholder="Calculater" readonly="" />
+            </div>
+
+            <div class="cant-3">
+
+                <div> <button onclick="add()" id="btn-1"> + </button> </div>
+                <div> <button onclick="sub()" id="btn-2"> - </button> </div>
+                <div> <button onclick="mal()" id="btn-3"> * </button> </div>
+                <div> <button onclick="div()" id="btn-4"> / </button> </div>
+
+            </div>
+
+        </div>
+    
+
+</div>
+
+
+    <script>
+        
+
+        function add() {
+            // var num1 = document.getElementsByClassName('n1').value;
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var num1 = Number(num1);
+            var num2 = Number(num2);
+            var cal = num1 + num2;
+            console.log(add);
+            document.getElementById('cal').value = cal ;
+        }
+        
+        function sub() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var num1 = Number(num1);
+            var num2 = Number(num2);
+            var cal = num1 - num2;
+            console.log(sub);
+            document.getElementById('cal').value = cal ;
+        }
+        
+        function mal() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var num1 = Number(num1);
+            var num2 = Number(num2);
+            var cal = num1 * num2;
+            console.log(mal);
+            document.getElementById('cal').value = cal ;
+        }
+        
+
+        function div() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            var num1 = Number(num1);
+            var num2 = Number(num2);
+            var cal = num1 / num2;
+            console.log(cal);
+            document.getElementById('cal').value = cal ;
+        }
+        
+        
+
+
+
+
+    </script>
+
+</body>
+</html>

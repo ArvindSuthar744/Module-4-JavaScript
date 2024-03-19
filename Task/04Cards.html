@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    
+    <div id="main">
+        <button onclick="boxs()">Create</button>
+        <div class="card">
+
+            <div class="c-1">
+                <img src="../Material/asset 28.jpeg" alt="">
+            </div>
+            <div class="c-2">
+                <h3>Mast & Harbour</h3>
+                <p>Men Slim Fit Casual Sustainab.</p>
+                <h3>Rs.598</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+<script>
+
+     function boxs() {
+
+        // let box = document.createElement('card');
+        // let TextNode = document.createTextcards('hii');
+        // cards.appendChild(cards);
+        // document.getElementsByClassName('main').appendChild(box);
+
+        let head = document.createElement('h3');
+        let texthead = document.createTextNode('cards');
+        head.appendChild(texthead);
+        document.getElementById('main').appendChild(head);
+
+     }
+
+
+</script>
+
+
+</body>
+</html>
