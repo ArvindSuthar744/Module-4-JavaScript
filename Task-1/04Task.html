@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+        .main{
+            width: 100%;
+            height: 650px;
+            background: rosybrown;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            width: 60%;
+            height: 200px;
+            padding: 30px 20px;
+            margin: 50px auto;
+            background: khaki;
+            font-size: 20px;
+            color: crimson;
+            border: 4px solid black;
+        }
+        button{
+            padding: 10px 30px;
+            background: crimson;
+            color: white;
+            font-size: 17px;
+        }
+        .btn{
+            width: 500px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Hide, Show, Hide & Show </h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt consequuntur excepturi repellendus
+            distinctio! Tenetur consequuntur adipisci doloremque error iste sapiente laboriosam explicabo obcaecati
+            cumque.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt consequuntur excepturi repellendus
+            distinctio! Tenetur consequuntur adipisci doloremque error iste sapiente laboriosam explicabo obcaecati
+            cumque.</p>
+
+        <div class="btn">
+            <button class="btn1" onclick="hide()" >Hide</button>    
+            <button class="btn2" onclick="show()">Show</button>  
+            <button class="btn3" onclick="hideshow()">Hide & Show</button>   
+        </div>  
+         
+    </div>
+
+
+
+    <script>
+        para1 = document.querySelector('.para');
+        copy = para1.innerHTML;
+      
+        function hide(){
+            para1.style.display='none';
+        }
+        function show(){
+            para1.style.display='block';
+        }
+        function hideshow(){
+           if(para1.style.display == 'block')
+            {
+                para1.style.display='none';
+            }
+            else{
+                para1.style.display='block';
+            }
+            
+        }
+
+        
+    </script>
+</body>
+
+</html>

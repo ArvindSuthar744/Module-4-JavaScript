@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .btn{
+            background-color: crimson;
+            color: white;
+            padding: 10px 30px ;
+            margin-left: 30px;
+            font-size: 17px;
+        }
+        .main{
+            width: 100%;
+            height: 550px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            /* background: royalblue; */
+        }
+        .main *{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            /* margin-top: 50px; */
+        }
+        .box-1{
+            background: rgb(225, 97, 65);
+        }
+        .box-2{
+            background-color: crimson;
+        }
+        .box-3{
+            background: lime;
+        }
+
+        .bo1{
+            animation-name: box1;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+      
+        .bo3{
+            animation-name: box3;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+         @keyframes box1 {
+
+            0%{
+                margin-left: -1250px;
+            }
+
+            100%{
+                margin-left: 0px;
+            }
+        }
+        @keyframes box3 {
+
+            0%{
+                margin-right: -1250px;
+            }
+
+            100%{
+                margin-right: 0px;
+            }
+        }
+
+        .bo2{
+            width: 0px;
+            height: 0px;
+            border-top: 150px solid blue;
+            border-bottom: 0px solid rgb(255, 153, 0);
+            border-left: 80px solid rgb(255, 0, 0);
+            border-right: 80px solid rgb(60, 255, 0);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button  class="btn" onclick="b1(),b2(),b3()">Click</button>
+    <h1>Q2.</h1>
+    <div class="main">
+
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+
+
+    </div>
+
+    <script>
+        
+        btn = document.querySelector('.btn');
+
+        box_1 = document.querySelector('.box-1');
+        box_2 = document.querySelector('.box-2');
+        box_3 = document.querySelector('.box-3');
+
+        function b1() {
+            box_1.classList.add('bo1');
+        }
+        function b2() {
+            box_2.classList.add('bo2');
+        }
+        function b3() {
+            box_3.classList.add('bo3');
+        }
+        
+        
+    </script>
+</body>
+</html>

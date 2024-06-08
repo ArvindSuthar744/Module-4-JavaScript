@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="a1" id="a1"></h1>
+    <div class="d1" id="d1"></div>
+    <input type="text" class="i1" id="i1" >
+    <img src="x.jpg" alt="no image" class="img1" id="img1" height="100px">
+    <a href="xyz.html" id="anc1" class="anc1"></a>
+
+        <button onclick="test()">Change</button>
+
+ 
+
+    <script>
+
+        // console.log(document.getElementById('anc1').href );
+        
+        // console.log(document.getElementById('img1').alt);
+
+        document.querySelector('input').value = 'Search...'
+
+        document.querySelector('.d1').innerHTML = document.getElementById('img1').alt;
+        
+        document.getElementById('a1').innerHTML = document.getElementById('anc1').href ;
+        
+        function test(){
+            document.querySelector('img').src = '../Material/asset 28.jpeg'
+        }
+        
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

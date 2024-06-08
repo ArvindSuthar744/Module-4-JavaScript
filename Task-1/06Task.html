@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- NaN :Not a number (*,/,%)==> when you try to perform operation on number and string except (+) -->
+
+    Price : <input type="text" value="200" id="price">
+    
+    <select name="" id="quantity" onchange="getPrice()">
+        <option >--- select quantity --- </option>
+        <option >1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="40">4</option>
+    </select>
+
+    <b id="res"></b>
+
+    <script>
+        inp = document.getElementById('price');
+        val = document.getElementById('quantity');
+        res = document.getElementById('res')
+
+       function getPrice()
+       {
+        res.innerHTML = (inp.value*val.value)//200 1
+       }
+       console.log(q.value)
+       
+    </script>
+</body>
+</html>

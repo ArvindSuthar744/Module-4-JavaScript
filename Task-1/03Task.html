@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .main div[class*='b']{
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            border: 1px solid black;
+        }
+        .main button{
+            padding: 10px 30px;
+            background: crimson;
+            color: white;
+            margin-top: 15px;
+        }
+        .main img{
+            width: 100%;
+            height: 350px;
+            border:  1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="b1">
+            <button class="btn1" onclick="b11()">ADD Img</button>
+            <img src="" alt="img1" class="img1">
+        </div>
+        <div class="b2">
+            <button class="btn2" onclick="b12()">Change Img</button>
+            <img src="img1.jpg" alt="img2" class="img2">
+        </div>
+        <div class="b3">
+            <button class="btn3" onclick="b13()">Click 1/2 Img</button>
+            <img src="img2.jpeg" alt="img3" class="img3">
+        </div>
+        
+
+    </div>
+
+
+    <script>
+
+        b1 = document.querySelector('.img1')
+        b2 = document.querySelector('.img2')
+        b3 = document.querySelector('.img3')
+        
+       function b11() {
+        b1.src = 'img1.jpg';
+       }
+        
+       function b12() {
+        b2.src = 'img2.jpeg';
+       }
+       
+    // img ke src ko compare karne ke liye match ko use karte hai
+
+       function b13() {
+        if(b3.src.match('img1.jpg'))
+        {
+            b3.src = 'img2.jpeg';
+        }
+        else if (b3.src.match('img2.jpeg'))
+        {
+            b3.src = 'img3.jpeg'
+        }
+        else{
+            b3.src = 'img1.jpg'
+        }
+       }
+
+    
+    </script>
+</body>
+</html>

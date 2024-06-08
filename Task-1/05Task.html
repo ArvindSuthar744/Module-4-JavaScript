@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        .main{
+            width: 100%;
+            height: 650px;
+            display: flex;
+            gap: 0px;
+        }
+        .part-1{
+            width: 49%;
+            height: 100%;
+            background: teal;
+        }
+        .part-2{
+            width: 49%;
+            height: 100%;
+            background: slategray;
+        }
+        .inp{
+            padding: 10px ;
+            margin: 50px 10px 0px 150px;
+        }
+        .sel{
+            padding: 10px;
+        }
+        #res{
+            font-size: 30px;
+            margin-left: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <!-- <div class="part-1">
+            <input type="text"id="inp1" class="inp" value="100">
+            
+            <select name="" id="q1" class="sel" onchange="add1()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                </select>
+                
+                <span id ="res"></span>
+                </div> -->
+                
+                <div class="part-2">
+                    <input type="text" name="" id="inp2" class="inp" >
+        
+                    <select name="sel" id="sel2" class="sel">
+                        <option value="American">American</option>
+                        <option value="Usa">Usa</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+        
+            </div>
+                
+    <script>
+        inp1 = document.getElementById('inp1');
+        val = document.getElementById('q1');
+        res = document.getElementById('res');
+      
+       
+            function add1()
+            { 
+                res.innerHTML = (inp1.value * val.value)
+            }
+                
+                console.log(val.value)
+        
+        
+    </script>
+</body>
+</html>
